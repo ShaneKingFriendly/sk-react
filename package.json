@@ -1,0 +1,76 @@
+{
+  "name": "sk-react",
+  "version": "0.5.3",
+  "description": "ShaneKing for React",
+  "homepage": "https://github.com/ShaneKing/sk-react",
+  "author": {
+    "name": "ShaneKing",
+    "email": "github@azolla.org",
+    "url": "http://shaneking.org"
+  },
+  "bugs": {
+    "url": "https://github.com/ShaneKing/sk-react/issues"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://opensource.org/licenses/Apache-2.0"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ShaneKing/sk-react.git"
+  },
+  "files": [
+    "dist",
+    "lib",
+    "public",
+    ".editorconfig",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "ShaneKing",
+    "React"
+  ],
+  "main": "lib/index.js",
+  "module": "dist/index.esm.js",
+  "jest": {
+    "collectCoverage": true
+  },
+  "scripts": {
+    "build": "npm run build:dist && npm run build:lib && npm run doc:build",
+    "build:dist": "umi-lib build",
+    "build:lib": "umi-tools build",
+    "doc:build": "umi-lib doc build",
+    "doc:deploy": "umi-lib doc deploy",
+    "doc:dev": "umi-lib doc dev",
+    "prepublishOnly": "npm run build",
+    "test": "umi test && codecov"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "countup.js": "2.0.4",
+    "create-react-class": "15.6.3",
+    "echarts": "4.2.1",
+    "element-resize-event": "3.0.3",
+    "gojs": "2.0.14",
+    "jdenticon": "2.2.0",
+    "prop-types": "15.7.2",
+    "sk-i18n": "0.5.3",
+    "sk-js": "0.5.3",
+    "sql-formatter": "2.3.3"
+  },
+  "devDependencies": {
+    "babel-plugin-add-module-exports": "1.0.2",
+    "codecov": "3.5.0",
+    "umi": "2.8.9",
+    "umi-library": "1.6.0",
+    "umi-tools": "0.4.0"
+  },
+  "peerDependencies": {
+    "react": "16.x",
+    "react-dom": "16.x"
+  }
+}
