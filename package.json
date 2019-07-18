@@ -31,8 +31,8 @@
     "README.md"
   ],
   "keywords": [
-    "ShaneKing",
-    "React"
+    "React",
+    "ShaneKing"
   ],
   "main": "lib/index.js",
   "module": "dist/index.esm.js",
