@@ -1,6 +1,6 @@
 {
   "name": "sk-react",
-  "version": "0.5.4",
+  "version": "0.5.5",
   "description": "ShaneKing for React",
   "homepage": "https://github.com/ShaneKing/sk-react",
   "author": {
@@ -51,7 +51,7 @@
   },
   "dependencies": {
     "classnames": "2.2.6",
-    "codemirror": "5.48.0",
+    "codemirror": "5.48.2",
     "countup.js": "2.0.4",
     "create-react-class": "15.6.3",
     "echarts": "4.2.1",
@@ -59,14 +59,14 @@
     "gojs": "2.0.14",
     "jdenticon": "2.2.0",
     "prop-types": "15.7.2",
-    "sk-i18n": "0.5.4",
-    "sk-js": "0.5.4",
+    "sk-i18n": "0.5.5",
+    "sk-js": "0.5.5",
     "sql-formatter": "2.3.3"
   },
   "devDependencies": {
     "babel-plugin-add-module-exports": "1.0.2",
     "codecov": "3.5.0",
-    "umi": "2.8.11",
+    "umi": "2.8.12",
     "umi-library": "1.6.0",
     "umi-tools": "0.4.0"
   },
