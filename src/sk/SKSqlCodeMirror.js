@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Mesgs, Proxy0, SK } from 'sk-js';
+import { Mesgs } from 'sk-i18n';
+import { Proxy0, SK } from 'sk-js';
 import sqlFormatter from 'sql-formatter';
 import Comp from '../Comp';
 import CodeMirror from '../3/Codemirror';

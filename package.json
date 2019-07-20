@@ -1,6 +1,6 @@
 {
   "name": "sk-react",
-  "version": "0.5.5",
+  "version": "0.5.6",
   "description": "ShaneKing for React",
   "homepage": "https://github.com/ShaneKing/sk-react",
   "author": {
@@ -35,7 +35,7 @@
     "ShaneKing"
   ],
   "main": "lib/index.js",
-  "module": "dist/index.esm.js",
+  "module": "lib/index.js",
   "jest": {
     "collectCoverage": true
   },
@@ -52,15 +52,15 @@
   "dependencies": {
     "classnames": "2.2.6",
     "codemirror": "5.48.2",
-    "countup.js": "2.0.4",
+    "countup.js": "1.9.3",
     "create-react-class": "15.6.3",
     "echarts": "4.2.1",
     "element-resize-event": "3.0.3",
     "gojs": "2.0.14",
     "jdenticon": "2.2.0",
     "prop-types": "15.7.2",
-    "sk-i18n": "0.5.5",
-    "sk-js": "0.5.5",
+    "sk-i18n": "0.5.6",
+    "sk-js": "0.5.6",
     "sql-formatter": "2.3.3"
   },
   "devDependencies": {
