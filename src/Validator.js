@@ -1,5 +1,4 @@
-import { Mesgs } from 'sk-i18n';
-import { SK } from 'sk-js';
+import { Mesgs, SK } from 'sk-js';
 
 export default class Validator {
   static PROP_DEPS = 'deps';

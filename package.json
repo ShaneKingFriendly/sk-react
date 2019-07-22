@@ -1,6 +1,6 @@
 {
   "name": "sk-react",
-  "version": "0.5.9",
+  "version": "0.5.20",
   "description": "ShaneKing for React",
   "homepage": "https://github.com/ShaneKing/sk-react",
   "author": {
@@ -24,8 +24,9 @@
   },
   "files": [
     "dist",
+    "es",
+    "lib",
     "public",
-    "src",
     ".editorconfig",
     "LICENSE",
     "README.md"
@@ -34,19 +35,15 @@
     "React",
     "ShaneKing"
   ],
-  "main": "dist/index.js",
-  "module": "dist/index.esm.js",
-  "jest": {
-    "collectCoverage": true
-  },
+  "main": "lib/index.js",
+  "module": "es/index.js",
   "scripts": {
-    "build": "npm run build:dist && npm run doc:build",
-    "build:dist": "umi-lib build",
-    "doc:build": "umi-lib doc build",
-    "doc:deploy": "umi-lib doc deploy",
-    "doc:dev": "umi-lib doc dev",
+    "build": "father build && npm run doc:build",
+    "doc:build": "father doc build",
+    "doc:deploy": "father doc deploy",
+    "doc:dev": "father doc dev",
     "prepublishOnly": "npm run build",
-    "test": "umi test && codecov"
+    "test": "father test --coverage && codecov"
   },
   "dependencies": {
     "classnames": "2.2.6",
@@ -58,17 +55,16 @@
     "gojs": "2.0.14",
     "jdenticon": "2.2.0",
     "prop-types": "15.7.2",
-    "sk-i18n": "0.5.9",
-    "sk-js": "0.5.9",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "sk-js": "0.5.20",
     "sql-formatter": "2.3.3"
   },
   "devDependencies": {
     "codecov": "3.5.0",
-    "umi": "2.8.12",
-    "umi-library": "1.6.0"
+    "father": "2.13.6"
   },
-  "peerDependencies": {
-    "react": "16.x",
-    "react-dom": "16.x"
+  "jest": {
+    "collectCoverage": true
   }
 }

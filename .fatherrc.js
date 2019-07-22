@@ -1,9 +1,9 @@
 export default {
   // cjs: { type: 'babel' },
-  cjs: 'rollup',
+  cjs: 'babel',
   doc: {
     base: '/sk-react',
   },
   entry: 'src/index.js',
-  esm: 'rollup',
+  esm: 'babel',
 };
