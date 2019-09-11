@@ -1,6 +1,6 @@
 {
   "name": "sk-react",
-  "version": "0.5.20",
+  "version": "0.6.0",
   "description": "ShaneKing for React",
   "homepage": "https://github.com/ShaneKing/sk-react",
   "author": {
@@ -47,22 +47,21 @@
   },
   "dependencies": {
     "classnames": "2.2.6",
-    "codemirror": "5.48.2",
-    "countup.js": "1.9.3",
+    "codemirror": "5.48.4",
+    "countup.js": "2.0.4",
     "create-react-class": "15.6.3",
     "echarts": "4.2.1",
     "element-resize-event": "3.0.3",
-    "gojs": "2.0.14",
     "jdenticon": "2.2.0",
     "prop-types": "15.7.2",
-    "react": "16.8.6",
-    "react-dom": "16.8.6",
-    "sk-js": "0.5.20",
+    "react": "16.9.0",
+    "react-dom": "16.9.0",
+    "sk-js": "0.5.21",
     "sql-formatter": "2.3.3"
   },
   "devDependencies": {
     "codecov": "3.5.0",
-    "father": "2.13.6"
+    "father": "2.18.1"
   },
   "jest": {
     "collectCoverage": true
