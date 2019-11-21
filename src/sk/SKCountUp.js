@@ -1,4 +1,4 @@
-import CountUp from 'countup.js';
+import { CountUp } from 'countup.js';
 import PropTypes from 'prop-types';
 import React from 'react';
 import { Proxy0, SK } from 'sk-js';
