@@ -61,7 +61,7 @@
   },
   "devDependencies": {
     "codecov": "3.6.1",
-    "father": "2.27.0"
+    "father": "2.29.0"
   },
   "jest": {
     "collectCoverage": true
