@@ -1,6 +1,6 @@
 {
   "name": "sk-react",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "description": "ShaneKing for React",
   "homepage": "https://github.com/ShaneKing/sk-react",
   "author": {
@@ -56,12 +56,12 @@
     "prop-types": "15.7.2",
     "react": "16.12.0",
     "react-dom": "16.12.0",
-    "sk-js": "0.5.24",
+    "sk-js": "0.5.25",
     "sql-formatter": "2.3.3"
   },
   "devDependencies": {
     "codecov": "3.6.1",
-    "father": "2.29.0"
+    "father": "2.29.1"
   },
   "jest": {
     "collectCoverage": true
