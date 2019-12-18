@@ -1,7 +1,7 @@
-import { CountUp } from 'countup.js';
+import {CountUp} from 'countup.js';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Proxy0, SK } from 'sk-js';
+import {Proxy0, SK} from 'sk-js';
 import Comp from '../Comp';
 import Reacts from '../Reacts';
 
@@ -21,10 +21,10 @@ export default class SKCountUp extends Comp {
     formattingFn: null,
     onComplete: undefined,
     onStart: undefined,
-    prefix: SK.CHAR_EMPTY,
+    prefix: SK.STR_EMPTY,
     separator: SK.CHAR_COMMA,
     start: 0,
-    suffix: SK.CHAR_EMPTY,
+    suffix: SK.STR_EMPTY,
     redraw: false,
     style: undefined,
     useEasing: true,

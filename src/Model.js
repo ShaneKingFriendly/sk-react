@@ -1,4 +1,4 @@
-import { Proxy0, SK } from 'sk-js';
+import {Proxy0, SK} from 'sk-js';
 import Validator from './Validator';
 
 export default class Model {
@@ -39,7 +39,7 @@ export default class Model {
    */
   static object2ModelIds(prefix, modelIds = [], object = {}) {
     Object.keys(object).forEach((key) => {
-      const tmpKey = prefix + (String(prefix).skBlank() ? SK.CHAR_EMPTY : SK.CHAR_DOT) + key;
+      const tmpKey = prefix + (String(prefix).skBlank() ? SK.STR_EMPTY : SK.CHAR_DOT) + key;
       const tmpVal = object[key];
       if (Proxy0._.isPlainObject(tmpVal)) {
         Model.object2ModelIds(tmpKey, modelIds, tmpVal);
@@ -57,7 +57,7 @@ export default class Model {
     let rtn = [];
     if (sao) {
       if (Proxy0._.isPlainObject(sao)) {
-        Model.object2ModelIds(SK.CHAR_EMPTY, rtn, sao);
+        Model.object2ModelIds(SK.STR_EMPTY, rtn, sao);
       } else if (Proxy0._.isArray(sao)) {
         rtn = rtn.concat(sao);
       } else if (Proxy0._.isString(sao)) {
