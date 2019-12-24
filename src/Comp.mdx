@@ -1,0 +1,20 @@
+---
+name: Comp
+route: /Comp
+sidebar: true
+---
+
+
+# Features
+- Two-way Binding
+  - component --- add listener --- modelId on model
+  - modelId's value change --- fireEvent -- component auto refresh
+  - component event --- auto change --- modelId's value
+- Component props
+  - model series: skSysModel(SPA just one), skModel(even page), model(some scenario), modelId(auto two-way binding and monitor)
+  - bfo(boolean/function/object) series: active, disabled, hidden, preview(Form Components), readOnly, required
+    - preview: SKDatePicker, SKRangePicker, SKInput, SKTextArea, SKSelect, SKRemoteSelect, SKSwitch
+  - value process series: m2nConvertor, n2mConvertor, m2vConvertor
+- props trans
+  - auto trans to child(without compTag,modelId,children,className) and self(without compTag,modelId)
+

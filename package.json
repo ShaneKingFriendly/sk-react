@@ -1,0 +1,69 @@
+{
+  "name": "sk-react",
+  "version": "0.6.5",
+  "description": "ShaneKing for React",
+  "homepage": "https://github.com/ShaneKing/sk-react",
+  "author": {
+    "name": "ShaneKing",
+    "email": "github@azolla.org",
+    "url": "http://shaneking.org"
+  },
+  "bugs": {
+    "url": "https://github.com/ShaneKing/sk-react/issues"
+  },
+  "license": "Apache-2.0",
+  "licenses": [
+    {
+      "type": "Apache-2.0",
+      "url": "https://opensource.org/licenses/Apache-2.0"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:ShaneKing/sk-react.git"
+  },
+  "files": [
+    "dist",
+    "es",
+    "lib",
+    "public",
+    ".editorconfig",
+    "LICENSE",
+    "README.md"
+  ],
+  "keywords": [
+    "React",
+    "ShaneKing"
+  ],
+  "main": "lib/index.js",
+  "module": "es/index.js",
+  "scripts": {
+    "build": "father build && npm run doc:build",
+    "doc:build": "father doc build",
+    "doc:deploy": "father doc deploy",
+    "doc:dev": "father doc dev",
+    "prepublishOnly": "npm run build",
+    "test": "father test --coverage && codecov"
+  },
+  "dependencies": {
+    "classnames": "2.2.6",
+    "codemirror": "5.49.2",
+    "countup.js": "2.0.4",
+    "create-react-class": "15.6.3",
+    "echarts": "4.5.0",
+    "element-resize-event": "3.0.3",
+    "jdenticon": "2.2.0",
+    "prop-types": "15.7.2",
+    "react": "16.12.0",
+    "react-dom": "16.12.0",
+    "sk-js": "0.6.5",
+    "sql-formatter": "2.3.3"
+  },
+  "devDependencies": {
+    "codecov": "3.6.1",
+    "father": "2.29.1"
+  },
+  "jest": {
+    "collectCoverage": true
+  }
+}
