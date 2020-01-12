@@ -1,5 +1,5 @@
 //https://github.com/JedWatson/react-codemirror/blob/master/src/Codemirror.js
-import { Proxy0 } from 'sk-js';
+import {Proxy0} from 'sk-js';
 
 const React = require('react');
 const ReactDOM = require('react-dom');
@@ -60,7 +60,7 @@ export default createReactClass({
       this.codeMirror.toTextArea();
     }
   },
-  componentWillReceiveProps: function(nextProps) {
+  componentWillReceiveProps: function (nextProps) {
     // if (this.codeMirror && nextProps.value !== undefined && nextProps.value !== this.props.value && normalizeLineEndings(this.codeMirror.getValue()) !== normalizeLineEndings(nextProps.value)) {
     if (this.codeMirror && nextProps.value !== undefined && normalizeLineEndings(this.codeMirror.getValue()) !== normalizeLineEndings(nextProps.value)) {
       if (this.props.preserveScrollPosition) {

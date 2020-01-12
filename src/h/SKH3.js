@@ -1,4 +1,4 @@
-import { SK } from 'sk-js';
+import {SK} from 'sk-js';
 import HtmlComp from './HtmlComp';
 import Reacts from '../Reacts';
 

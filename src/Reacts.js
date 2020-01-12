@@ -1,5 +1,5 @@
 import React from 'react';
-import { Proxy0 } from 'sk-js';
+import {Proxy0} from 'sk-js';
 
 export default class Reacts {
   static EVENT = {
@@ -589,7 +589,7 @@ export default class Reacts {
     tspan: 'tspan',
   };
   static TP = {
-    'a': ['className', 'onClick', 'style', 'title'],
+    'a': ['className', 'href', 'onClick', 'style', 'target', 'title'],
     'aside': ['className', 'style', 'title'],
     'br': ['className', 'style', 'title'],
     'canvas': ['className', 'style', 'title'],

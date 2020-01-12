@@ -144,11 +144,11 @@ export default class Model {
   }
 
   fireChangedEvent(id, old, current) {
-    this.fireEvent({ model: this, id, old, current, type: Model.EvtType.Changed });
+    this.fireEvent({model: this, id, old, current, type: Model.EvtType.Changed});
   }
 
   fireErroredEvent(id, old, current) {
-    this.fireEvent({ model: this, id, old, current, type: Model.EvtType.Errored });
+    this.fireEvent({model: this, id, old, current, type: Model.EvtType.Errored});
   }
 
   fireEvent(evt) {
@@ -328,7 +328,7 @@ export default class Model {
   validateAll() {
     const configs = this.getValidator().getModelIds();
     Object.keys(configs).forEach((modelId) => {
-      this.validate.call(modelId, { model: this });
+      this.validate.call(modelId, {model: this});
     });
   }
 

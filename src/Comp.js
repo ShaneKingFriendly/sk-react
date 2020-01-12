@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Proxy0, SK } from 'sk-js';
+import {Proxy0, SK} from 'sk-js';
 import Model from './Model';
 import Reacts from './Reacts';
 
@@ -110,7 +110,7 @@ export default class Comp extends React.Component {
     this.SK_COMP_NAME = Comp.SK_COMP_NAME;
     this.monitors = [];
     this.updateUI = (evt) => {
-      this.setState({ stateUid: Proxy0._.uniqueId(Comp.SK_COMP_STATE_ID_PREFIX) });
+      this.setState({stateUid: Proxy0._.uniqueId(Comp.SK_COMP_STATE_ID_PREFIX)});
     };
   }
 
@@ -154,7 +154,7 @@ export default class Comp extends React.Component {
   }
 
   render() {
-    const { compTag: CompTag } = this.props;
+    const {compTag: CompTag} = this.props;
 
     if (this.skBfo(Comp.SK_PROPS.PREVIEW)) {
       return this.renderPreview();
@@ -303,7 +303,7 @@ export default class Comp extends React.Component {
   }
 
   renderComp() {
-    const { compTag: CompTag } = this.props;
+    const {compTag: CompTag} = this.props;
 
     return (
       <CompTag {...this.skTransProps2Self(CompTag)}>

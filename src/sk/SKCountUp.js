@@ -124,7 +124,7 @@ export default class SKCountUp extends Comp {
   }
 
   render() {
-    const { compTag: CompTag, start } = this.props;
+    const {compTag: CompTag, start} = this.props;
 
     return (
       <CompTag {...this.skTransProps2Self(CompTag)} ref={refNode => this.countupDomRef = refNode}>

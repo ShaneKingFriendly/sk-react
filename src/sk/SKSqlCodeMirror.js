@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Mesgs, Proxy0, SK } from 'sk-js';
+import {Mesgs, Proxy0, SK} from 'sk-js';
 import sqlFormatter from 'sql-formatter';
 import Comp from '../Comp';
 import CodeMirror from '../3/Codemirror';
@@ -88,14 +88,15 @@ export default class SKSqlCodeMirror extends Comp {
   }
 
   render() {
-    const { compTag: CompTag } = this.props;
+    const {compTag: CompTag} = this.props;
     //TODO
     //this.skBfo(Comp.SK_PROPS.PREVIEW) ? {readOnly: true} : {}
-    let options = SK.extends(true, {}, SKSqlCodeMirror.defaultProps.options, this.props.options, this.props.optionsId ? this.skModel().skVal(this.props.optionsId) : {}, this.skBfo(Comp.SK_PROPS.PREVIEW) ? { readOnly: true } : {});
-    options = this.props.hintOptionsId ? SK.extends(true, {}, options, { hintOptions: this.skModel().skVal(this.props.hintOptionsId) }) : options;
+    let options = SK.extends(true, {}, SKSqlCodeMirror.defaultProps.options, this.props.options, this.props.optionsId ? this.skModel().skVal(this.props.optionsId) : {}, this.skBfo(Comp.SK_PROPS.PREVIEW) ? {readOnly: true} : {});
+    options = this.props.hintOptionsId ? SK.extends(true, {}, options, {hintOptions: this.skModel().skVal(this.props.hintOptionsId)}) : options;
 
     return (
-      <CompTag {...this.skTransProps2Self(CompTag)} onChange={this.handleChange} options={options} ref={refNode => this.codeMirrorDomRef = refNode} value={this.skVal()}>
+      <CompTag {...this.skTransProps2Self(CompTag)} onChange={this.handleChange} options={options}
+               ref={refNode => this.codeMirrorDomRef = refNode} value={this.skVal()}>
         {this.skTransProps2Child()}
       </CompTag>
     );

@@ -1,5 +1,5 @@
 import React from 'react';
-import { SK } from 'sk-js';
+import {SK} from 'sk-js';
 import ReactComp from './ReactComp';
 
 export default class SKFragment extends ReactComp {

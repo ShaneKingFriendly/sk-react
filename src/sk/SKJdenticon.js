@@ -2,7 +2,7 @@
 import jdenticon from 'jdenticon';
 import PropTypes from 'prop-types';
 import React from 'react';
-import { Proxy0, SK } from 'sk-js';
+import {Proxy0, SK} from 'sk-js';
 import Comp from '../Comp';
 import Reacts from '../Reacts';
 
@@ -36,10 +36,11 @@ export default class SKJdenticon extends Comp {
   }
 
   render() {
-    const { compTag: CompTag, size } = this.props;
+    const {compTag: CompTag, size} = this.props;
 
     return (
-      <CompTag {...this.skTransProps2Self(CompTag)} height={size} width={size} ref={refNode => this.jdenticonDomRef = refNode}/>
+      <CompTag {...this.skTransProps2Self(CompTag)} height={size} width={size}
+               ref={refNode => this.jdenticonDomRef = refNode}/>
     );
   }
 }

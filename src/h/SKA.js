@@ -1,5 +1,5 @@
 import React from 'react';
-import { Proxy0, SK } from 'sk-js';
+import {Proxy0, SK} from 'sk-js';
 import HtmlComp from './HtmlComp';
 import Reacts from '../Reacts';
 
@@ -21,11 +21,11 @@ export default class SKA extends HtmlComp {
   }
 
   render() {
-    const { compTag: CompTag } = this.props;
+    const {compTag: CompTag, href} = this.props;
     return (
       <CompTag
         {...this.skTransProps2Self(CompTag)}
-        href='javascript:void(0);'
+        href={href || 'javascript:void(0);'}
         onClick={this.handleClick}
       >
         {this.skTransProps2Child()}

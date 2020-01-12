@@ -1,5 +1,5 @@
 import React from 'react';
-import { SK } from 'sk-js';
+import {SK} from 'sk-js';
 import Comp from '../Comp';
 
 export default class ReactComp extends Comp {
@@ -13,7 +13,7 @@ export default class ReactComp extends Comp {
   }
 
   render() {
-    const { compTag: CompTag } = this.props;
+    const {compTag: CompTag} = this.props;
 
     return (
       <CompTag {...this.skTransProps2Self(CompTag)}>

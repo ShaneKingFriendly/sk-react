@@ -8,7 +8,7 @@ export default class Validator {
       return SK.s4s(value) === SK.STR_EMPTY ? Mesgs.get('$#{field}_is_required').skFmt({field: Mesgs.gets(settings.field)}) : true;
     },
     email: (model, value, settings) => {
-      return /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(value) ? true : Mesgs.get('$#{field}_must_be_an_email').skFmt({ field: Mesgs.gets(settings.field) });
+      return /^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(value) ? true : Mesgs.get('$#{field}_must_be_an_email').skFmt({field: Mesgs.gets(settings.field)});
     },
     lengthRange: (model, value, settings) => {
       let tmpValue = SK.s4s(value);
