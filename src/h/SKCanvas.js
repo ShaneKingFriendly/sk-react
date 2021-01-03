@@ -5,7 +5,7 @@ import Reacts from '../Reacts';
 export default class SKCanvas extends HtmlComp {
   static SK_COMP_NAME = 'SKCanvas';
   static defaultProps = SK.extends(true, {}, HtmlComp.defaultProps, {
-    compTag: Reacts.TAG.canvas,
+    ksCompTag: Reacts.TAG.canvas,
   });
 
   constructor(...args) {

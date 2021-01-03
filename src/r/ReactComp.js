@@ -13,12 +13,12 @@ export default class ReactComp extends Comp {
   }
 
   render() {
-    const {compTag: CompTag} = this.props;
+    const {ksCompTag: KsCompTag} = this.props;
 
     return (
-      <CompTag {...this.skTransProps2Self(CompTag)}>
-        {this.skTransProps2Child()}
-      </CompTag>
+      <KsCompTag {...this.transProps2Self(KsCompTag)}>
+        {this.transProps2Child()}
+      </KsCompTag>
     );
   }
 }

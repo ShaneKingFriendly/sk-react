@@ -1,6 +1,6 @@
 {
   "name": "sk-react",
-  "version": "0.10.0",
+  "version": "0.20.1",
   "description": "React for ShaneKing",
   "homepage": "https://github.com/ShaneKing/sk-react",
   "author": {
@@ -38,7 +38,7 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "scripts": {
-    "build": "father build && npm run doc:build",
+    "build": "father build",
     "doc:build": "father doc build",
     "doc:deploy": "father doc deploy",
     "doc:dev": "father doc dev",
@@ -47,10 +47,10 @@
   },
   "dependencies": {
     "classnames": "2.2.6",
-    "codemirror": "5.49.2",
+    "codemirror": "5.51.0",
     "countup.js": "2.0.4",
     "create-react-class": "15.6.3",
-    "echarts": "4.5.0",
+    "echarts": "4.6.0",
     "element-resize-event": "3.0.3",
     "jdenticon": "2.2.0",
     "prop-types": "15.7.2",
@@ -60,7 +60,7 @@
     "sql-formatter": "2.3.3"
   },
   "devDependencies": {
-    "codecov": "3.6.1",
+    "codecov": "3.6.5",
     "father": "2.29.1"
   },
   "jest": {

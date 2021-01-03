@@ -5,7 +5,7 @@ import Reacts from '../Reacts';
 export default class SKSpan extends HtmlComp {
   static SK_COMP_NAME = 'SKSpan';
   static defaultProps = SK.extends(true, {}, HtmlComp.defaultProps, {
-    compTag: Reacts.TAG.span,
+    ksCompTag: Reacts.TAG.span,
   });
 
   constructor(...args) {

@@ -12,7 +12,7 @@ import Reacts from '../Reacts';
 export default class SKCountUp extends Comp {
   static SK_COMP_NAME = 'SKCountUp';
   static defaultProps = SK.extends(true, {}, Comp.defaultProps, {
-    compTag: Reacts.TAG.span,
+    ksCompTag: Reacts.TAG.span,
     decimal: SK.CHAR_DOT,
     decimals: 0,
     duration: 3,
@@ -124,12 +124,12 @@ export default class SKCountUp extends Comp {
   }
 
   render() {
-    const {compTag: CompTag, start} = this.props;
+    const {ksCompTag: KsCompTag, start} = this.props;
 
     return (
-      <CompTag {...this.skTransProps2Self(CompTag)} ref={refNode => this.countupDomRef = refNode}>
+      <KsCompTag {...this.transProps2Self(KsCompTag)} ref={refNode => this.countupDomRef = refNode}>
         {start}
-      </CompTag>
+      </KsCompTag>
     );
   }
 }

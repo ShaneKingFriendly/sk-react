@@ -5,7 +5,7 @@ import Reacts from '../Reacts';
 export default class SKH1 extends HtmlComp {
   static SK_COMP_NAME = 'SKH1';
   static defaultProps = SK.extends(true, {}, HtmlComp.defaultProps, {
-    compTag: Reacts.TAG.h1,
+    ksCompTag: Reacts.TAG.h1,
   });
 
   constructor(...args) {

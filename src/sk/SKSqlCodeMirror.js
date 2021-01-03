@@ -29,7 +29,7 @@ CodeMirror.NON_SK_COMP_NAME = 'SqlCodeMirror';
 export default class SKSqlCodeMirror extends Comp {
   static SK_COMP_NAME = 'SKSqlCodeMirror';
   static defaultProps = SK.extends(true, {}, Comp.defaultProps, CodeMirror.defaultProps, {
-    compTag: CodeMirror,
+    ksCompTag: CodeMirror,
     options: {
       autofocus: true,
       extraKeys: {
@@ -78,27 +78,27 @@ export default class SKSqlCodeMirror extends Comp {
   addExtendChangedMonitor() {
     super.addExtendChangedMonitor();
     this.addChangedMonitor(this.props.hintOptionsId);
-    this.skModel().addIdChangedListener(this.props.formatId, this.handleFormat);
+    this.model().addIdChangedListener(this.props.formatId, this.handleFormat);
   }
 
   rmvExtendChangedMonitor() {
     super.rmvExtendChangedMonitor();
     this.rmvChangedMonitor(this.props.hintOptionsId);
-    this.skModel().rmvIdChangedListener(this.props.formatId, this.handleFormat);
+    this.model().rmvIdChangedListener(this.props.formatId, this.handleFormat);
   }
 
   render() {
-    const {compTag: CompTag} = this.props;
+    const {ksCompTag: KsCompTag} = this.props;
     //TODO
     //this.skBfo(Comp.SK_PROPS.PREVIEW) ? {readOnly: true} : {}
-    let options = SK.extends(true, {}, SKSqlCodeMirror.defaultProps.options, this.props.options, this.props.optionsId ? this.skModel().skVal(this.props.optionsId) : {}, this.skBfo(Comp.SK_PROPS.PREVIEW) ? {readOnly: true} : {});
-    options = this.props.hintOptionsId ? SK.extends(true, {}, options, {hintOptions: this.skModel().skVal(this.props.hintOptionsId)}) : options;
+    let options = SK.extends(true, {}, SKSqlCodeMirror.defaultProps.options, this.props.options, this.props.optionsId ? this.model().skVal(this.props.optionsId) : {});
+    options = this.props.hintOptionsId ? SK.extends(true, {}, options, {hintOptions: this.model().skVal(this.props.hintOptionsId)}) : options;
 
     return (
-      <CompTag {...this.skTransProps2Self(CompTag)} onChange={this.handleChange} options={options}
-               ref={refNode => this.codeMirrorDomRef = refNode} value={this.skVal()}>
-        {this.skTransProps2Child()}
-      </CompTag>
+      <KsCompTag {...this.transProps2Self(KsCompTag)} onChange={this.handleChange} options={options}
+                 ref={refNode => this.codeMirrorDomRef = refNode} value={this.skVal()}>
+        {this.transProps2Child()}
+      </KsCompTag>
     );
   }
 }

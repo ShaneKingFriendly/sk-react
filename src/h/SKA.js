@@ -6,7 +6,7 @@ import Reacts from '../Reacts';
 export default class SKA extends HtmlComp {
   static SK_COMP_NAME = 'SKA';
   static defaultProps = SK.extends(true, {}, HtmlComp.defaultProps, {
-    compTag: Reacts.TAG.a,
+    ksCompTag: Reacts.TAG.a,
   });
   static propTypes = SK.extends(true, {}, HtmlComp.propTypes, {});
 
@@ -21,15 +21,15 @@ export default class SKA extends HtmlComp {
   }
 
   render() {
-    const {compTag: CompTag, href} = this.props;
+    const {ksCompTag: KsCompTag, href} = this.props;
     return (
-      <CompTag
-        {...this.skTransProps2Self(CompTag)}
+      <KsCompTag
+        {...this.transProps2Self(KsCompTag)}
         href={href || 'javascript:void(0);'}
         onClick={this.handleClick}
       >
-        {this.skTransProps2Child()}
-      </CompTag>
+        {this.transProps2Child()}
+      </KsCompTag>
     );
   }
 }

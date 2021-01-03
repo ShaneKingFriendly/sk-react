@@ -13,7 +13,7 @@ import Reacts from '../Reacts';
 export default class SKJdenticon extends Comp {
   static SK_COMP_NAME = 'SKJdenticon';
   static defaultProps = SK.extends(true, {}, Comp.defaultProps, {
-    compTag: Reacts.TAG.canvas,
+    ksCompTag: Reacts.TAG.canvas,
 
   });
   static propTypes = SK.extends(true, {}, Comp.propTypes, {
@@ -36,11 +36,11 @@ export default class SKJdenticon extends Comp {
   }
 
   render() {
-    const {compTag: CompTag, size} = this.props;
+    const {ksCompTag: KsCompTag, size} = this.props;
 
     return (
-      <CompTag {...this.skTransProps2Self(CompTag)} height={size} width={size}
-               ref={refNode => this.jdenticonDomRef = refNode}/>
+      <KsCompTag {...this.transProps2Self(KsCompTag)} height={size} width={size}
+                 ref={refNode => this.jdenticonDomRef = refNode}/>
     );
   }
 }

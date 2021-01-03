@@ -13,7 +13,7 @@ import Reacts from '../Reacts';
 export default class SKECharts extends Comp {
   static SK_COMP_NAME = 'SKECharts';
   static defaultProps = SK.extends(true, {}, Comp.defaultProps, {
-    compTag: Reacts.TAG.div,
+    ksCompTag: Reacts.TAG.div,
 
     lazyUpdate: true,
     live: true,
@@ -119,12 +119,12 @@ export default class SKECharts extends Comp {
   }
 
   render() {
-    const {compTag: CompTag, style} = this.props;
+    const {ksCompTag: KsCompTag, style} = this.props;
     let styled = Proxy0._.isEmpty(style) ? {height: '300px', width: '100%'} : style;
 
     return (
-      <CompTag
-        {...this.skTransProps2Self(CompTag)}
+      <KsCompTag
+        {...this.transProps2Self(KsCompTag)}
         style={styled}
         ref={refNode => this.echartsDomRef = refNode}
       />
